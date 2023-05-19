@@ -76,7 +76,7 @@ final class RedditUITests: XCTestCase {
         //verify that post view opened
         XCTAssert(app.staticTexts[defaultSearchValue].exists)
         XCTAssert(app.staticTexts[postHeader].exists)
-        XCTAssert(!app.buttons[defaultSearchValue].exists)
-        XCTAssert(!app.buttons[defaultSostingValue].exists)
+        XCTAssertFalse(app.buttons[defaultSearchValue].exists)
+        XCTAssertFalse(app.buttons[defaultSostingValue].exists)
     }
 }
