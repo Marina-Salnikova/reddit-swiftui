@@ -2,6 +2,8 @@
 //  RedditUITestsLaunchTests.swift
 //  RedditUITests
 //
+//  Test Suit with UI test for Reddit-iOS app
+//
 //  Created by Marina Salnikova on 2023-05-19.
 //  Copyright © 2023 Carson Katri. All rights reserved.
 //

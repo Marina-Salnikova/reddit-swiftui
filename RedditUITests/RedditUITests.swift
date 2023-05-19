@@ -2,6 +2,8 @@
 //  RedditUITests.swift
 //  RedditUITests
 //
+//  Test Suit with UI test for Reddit-iOS app
+//
 //  Created by Marina Salnikova on 2023-05-19.
 //  Copyright © 2023 Carson Katri. All rights reserved.
 //
@@ -34,7 +36,7 @@ final class RedditUITests: XCTestCase {
         app.typeText("\r")
     }
     
-    func testPostsSearch()throws {
+    func testPostSearch()throws {
         let app = XCUIApplication()
         
         let testSearchValue = "Test"
@@ -50,7 +52,7 @@ final class RedditUITests: XCTestCase {
         XCTAssert(app.staticTexts[testSearchValue].exists)
     }
     
-    func testPostsSorting() throws {
+    func testPostSorting() throws {
         let testSoringValue = "Top"
         
         //click on sort button

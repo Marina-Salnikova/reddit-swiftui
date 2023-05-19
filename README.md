@@ -29,3 +29,18 @@ extension Image {
 }
 #endif
 ```
+
+## How to run tests
+UI tests suit located in `RedditUITests`.
+To run in debug mode Use Xcode Test Navigator.
+To run tests in commind-line use this command:
+```
+xcodebuild \
+ test \
+ -project Reddit.xcodeproj \
+ -scheme Reddit \
+ -destination 'platform=iOS Simulator,name=iPhone 14 Pro'
+```
+*Note:* `xcodebuild` requires Xcode command line tools to be installed. 
+Use this command to install if it’s missing: `xcode-select --install`
+Verify installation: `xcode-select --print-path`
